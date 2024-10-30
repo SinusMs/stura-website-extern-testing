@@ -1,6 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
+<!-- This README would normally document whatever steps are necessary to get the
 application up and running.
 
 Things you may want to cover:
@@ -21,7 +21,7 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+* ... -->
 
 ## Prerequisites
 - Ubuntu Linux or [Windows with Ubuntu installed via WSL2](https://docs.docker.com/desktop/wsl/)
@@ -42,3 +42,6 @@ Things you may want to cover:
    - This will start the docker containers
 7. Web application available under http://localhost:3000
 8. With the Running Task focused in VS Code: `Ctrl` + `C` to stop server
+
+## Database Initialization
+run `docker exec -it docker-ruby-on-rails-web-1 rake db:migrate RAILS_ENV=test` from project directory
